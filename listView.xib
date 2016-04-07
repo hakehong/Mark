@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" rowHeight="178" id="qRT-gW-Mk5" customClass="MovieListViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRT-gW-Mk5" id="OWP-Vg-MVJ">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fsg-tC-VCW">
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-1b-2lA">
+                        <rect key="frame" x="168" y="78" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fsg-tC-VCW" firstAttribute="top" secondItem="OWP-Vg-MVJ" secondAttribute="topMargin" constant="-8" id="8OP-gA-DCU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fsg-tC-VCW" secondAttribute="bottom" constant="-8" id="LY3-0r-6nR"/>
+                    <constraint firstItem="OxL-1b-2lA" firstAttribute="centerX" secondItem="Fsg-tC-VCW" secondAttribute="centerX" id="dYQ-td-M8V"/>
+                    <constraint firstItem="Fsg-tC-VCW" firstAttribute="leading" secondItem="OWP-Vg-MVJ" secondAttribute="leadingMargin" constant="-8" id="iLh-F0-oEO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fsg-tC-VCW" secondAttribute="trailing" constant="-8" id="pGH-44-fg7"/>
+                    <constraint firstItem="OxL-1b-2lA" firstAttribute="centerY" secondItem="Fsg-tC-VCW" secondAttribute="centerY" id="wyU-QI-9SN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movieImage" destination="Fsg-tC-VCW" id="4p6-w3-NBU"/>
+                <outlet property="movieLabel" destination="OxL-1b-2lA" id="dta-Xm-Ll9"/>
+            </connections>
+            <point key="canvasLocation" x="260.5" y="176"/>
+        </tableViewCell>
+    </objects>
+</document>
